@@ -1,0 +1,13 @@
+/**
+ * All of the CSS for admin-specific functionality
+ * v 1.0.0
+ */
+.ba-rate-my-posts .dashicons-diamond, .ba-rate-my-posts .dashicons-paw{
+    font-size: 22px;
+}
+.ba-rate-my-posts .dashicons-paw::before{
+    content: "\f191";
+}
+.ba-rate-my-posts .dashicons-diamond::before{
+    content: "\f197";
+}

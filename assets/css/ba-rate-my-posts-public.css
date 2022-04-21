@@ -1,0 +1,90 @@
+/**
+ * All of the CSS for public-facing functionality
+ * v 1.0.0
+ */
+
+.ba-rate-my-posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ba-rate-my-posts .dashicons.empty-rating, .ba-rate-my-posts .dashicons-before.empty-rating{
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+}
+
+.ba-rate-my-posts .dashicons-star-filled.half-rating, .ba-rate-my-posts .dashicons-star{
+    content: "\f459";
+}
+
+.dashicons-paw::before{
+    content: "\f191";
+}
+
+.dashicons-diamond::before{
+    content: "\f197";
+}
+
+.dashicons-diamond, .dashicons-paw{
+    font-size: 22px;
+}
+
+.ba-rate-my-posts-ratings-num-ratings{
+    font-size: .8em;
+}
+
+/**
+    User Rating Section
+ */
+.ba-rate-my-posts-ratings-user-rating.ba-rate-my-posts-rating-icons{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    margin-top: 8px;
+}
+.ba-rate-my-posts-ratings-user-rating span {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.ba-rate-my-posts-ratings-user-rating span:hover:before,
+.ba-rate-my-posts-ratings-user-rating span:hover~span:before {
+    -webkit-text-stroke: unset;
+    -webkit-text-fill-color: black;
+}
+
+.ba-rate-my-posts-ratings-user-rating:hover span.dashicons{
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+}
+
+.ba-rate-my-posts-ratings-user-rating{
+    font-size: .8em;
+    line-height: .8em;
+}
+.ba-rate-my-posts-ratings-user-rating .dashicons{
+    width: 1em;
+    font-size: 1.4em;
+    vertical-align: baseline;
+}
+
+.ba-rate-my-posts-ratings-user-rating .dashicons.active{
+    -webkit-text-stroke: unset;
+    -webkit-text-fill-color: black;
+}
+.ba-rate-my-posts-ratings-user-rating .dashicons.spin {
+    animation: dashicons-spin 1s infinite;
+    animation-timing-function: linear;
+    vertical-align: center !important;
+}
+
+@keyframes dashicons-spin {
+    0% {
+        transform: rotate( 0deg );
+    }
+    100% {
+        transform: rotate( 360deg );
+    }
+}

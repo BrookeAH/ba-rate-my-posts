@@ -1,6 +1,5 @@
 === Plugin Name ===
-Contributors: No Wordpress plugin official username. ( Brooke Adrienne - brookeadriennepro@gmail.com )
-Donate link: whatbrookesees.com\ba-rate-my-posts
+Contributors: ( Brooke Adrienne - brookeadriennepro@gmail.com )
 Tags: ratings, rating, stars
 Requires at least: 3.0.1
 Tested up to: 5.9.1
